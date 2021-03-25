@@ -1,0 +1,18 @@
+[package]
+name = "zc_api_ffi"
+version = "0.1.0"
+authors = ["Hanh <hanh425@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+zcash-coldwallet = { path = "../zc" }
+anyhow = "1.0.39"
+tokio = { version = "0.2.13", features = ["macros", "blocking"] }
+android_logger = "0.10.0"
+log = "0.4.14"
+
+[build-dependencies]
+cbindgen = "0.14.3"
+dart-bindgen = "0.1.7"
